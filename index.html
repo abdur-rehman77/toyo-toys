@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- FONT AWESOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FONT -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500;1,600;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+  <div class="header">
+    <nav>
+     
+      <div class="logo">
+        <div class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="assets/images/logo.png" alt="" height="100px">
+      </div>
+      <div class="tabs">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">TOYS</a></li>
+          <li><a href="">BRANDS</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">GALLERY</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+        <div class="nav-icon">
+          <ul>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+        </div>
+      
+    </nav>
+  </div>
+<div class="mobile-container">
+  <div class="mobile-nav">
+    <nav>
+     
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="" height="100px">
+      </div>
+      <div class="tabs">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">TOYS</a></li>
+          <li><a href="">BRANDS</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">GALLERY</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="cross">
+        <i class="fa-solid fa-x"></i>
+      </div>
+    </nav>
+  </div>
+</div>
+<br><br><br><br>
+<!-- BANNEER -->
+ <div class="banner">
+  <video src="assets/images/banner.mp4" width="100%" autoplay muted loop></video>
+ </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+
+$(document).ready(function(){
+  $(".menu").click (function(){
+    $(".mobile-container").toggle(300);
+  })
+  $(".cross").click (function(){
+    $(".mobile-container").hide(300);
+  })
+})
+
+</script>
+
+
+</body>
+
+</html>
