@@ -60,7 +60,7 @@
 
     .menu{
         display: block;
-        margin-left: 30px;
+        margin-left: -15px;
     }
 
 
@@ -103,7 +103,126 @@
     color: white;
 }
 
-/* BANNER */
+/* HEADING */
+.all-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.781);
 
+}
 
+.left-line{
+    border: 1px solid rgba(0, 0, 0, 0.781);
+    height: 0;
+    width: 24%;
+}
+
+.right-line{
+    border: 1px solid rgba(0, 0, 0, 0.781);
+    height: 0;
+    width: 24%;
+}
+
+@media screen and (max-width:850px) {
+    .right-line{
+        width: 20%;
+    }
+
+    .left-line{
+        width: 20%;
+    }
+
+    .all-heading{
+        gap: 50px;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .right-line{
+        width: 15%;
+    }
+
+    .left-line{
+        width: 15%;
+    }
+
+    .all-heading{
+        gap: 40px;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .right-line{
+        width: 10%;
+    }
+
+    .left-line{
+        width: 10%;
+    }
+
+    .all-heading{
+        gap: 30px;
+        font-size: small;
+    }
+}
+
+/* SHOP BY AGE */
+
+.age-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.age-container a{
+    color: darkmagenta;
+}
+
+.age-container a{
+    color: darkmagenta;
+}
+
+.age-container1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.age-img{
+    width: 150px;
+    text-align: center;
+}
+
+.age-img img{
+    width: 100%;
+}
+.age{
+    margin-top: -30px;
+}
+
+.age-mobile{
+    display: none;
+}
+
+@media screen and (max-width:730px) {
+   .age-container{
+    display: none;
+   }
+   .age-mobile{
+    display: block;
+   }
+}
+
+@media screen and (max-width:465px) {
+     .age-img{
+        width: 100px;
+     }
+     .age{
+        font-size: small;
+        margin-top: -20px;
+     }
+ }
 
