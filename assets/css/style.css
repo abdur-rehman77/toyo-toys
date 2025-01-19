@@ -16,6 +16,7 @@
     border-bottom: 1px solid #e7dfdf;
     background-color: darkviolet;
     position: fixed;
+    z-index: 100;
 
 }
 .header nav{
@@ -79,6 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 }
 
 .mobile-nav nav{
@@ -232,3 +234,62 @@
  }
 
  /* NEW ARRIVALS */
+
+ .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+ }
+
+ .card{
+    width: 300px;
+    height: 390px;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+ }
+
+ .product{
+    width: 290px;
+    height: 350px;
+    margin: auto;
+    margin-top: 17px;
+    transition: transform 0.5s ease;
+ }
+
+ .product:hover{
+    transform: scale(1.05);
+ }
+
+ .product img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .button button{
+    padding: 8px;
+    border: 1px solid darkmagenta;
+    border-radius: 15px;
+    font-size: large;
+    background-color: white;
+    position: absolute;
+    bottom: 22px;
+    left: 90px;
+ }
+
+ .button{
+    display: none;
+ }
+
+ .button button:hover{
+    background-color: darkmagenta;
+    color: white;
+ }
+
+ .card:hover .button{
+    display: block;
+ }
+
+
+
