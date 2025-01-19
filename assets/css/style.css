@@ -194,7 +194,12 @@
 .age-img{
     width: 150px;
     text-align: center;
+    transition: transform 0.5s ease
 }
+
+.age-img:hover {
+    transform: scale(1.2);
+  }
 
 .age-img img{
     width: 100%;
@@ -226,3 +231,4 @@
      }
  }
 
+ /* NEW ARRIVALS */
