@@ -12,7 +12,7 @@
 
 .header{
     width: 100%;
-    height: 100px;
+    height: 80px;
     border-bottom: 1px solid #e7dfdf;
     background-color: darkviolet;
     position: fixed;
@@ -39,14 +39,18 @@
 
 .header .tabs ul {
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
     gap: 30px;
+}
+
+.header a:hover{
+    color: rgb(207, 143, 207);
 }
 
 .header .nav-icon ul{
     display: flex;
     gap: 25px;
-    font-size: large;
+    font-size: 15px;
     margin-right: 30px;
 }
 
@@ -158,7 +162,7 @@
     }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:430px) {
     .right-line{
         width: 10%;
     }
@@ -173,25 +177,38 @@
     }
 }
 
+@media screen and (max-width:290px) {
+    .right-line{
+        width: 7%;
+    }
+
+    .left-line{
+        width: 7%;
+    }
+
+    .all-heading{
+        gap: 20px;
+        font-size: 10px;
+    }
+}
+
 /* SHOP BY AGE */
 
 .age-container{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 
 .age-container a{
-    color: darkmagenta;
+    color: darkviolet;
 }
 
 .age-container a{
-    color: darkmagenta;
+    color: darkviolet;
 }
 
-.age-container1{
-    display: flex;
-    justify-content: space-around;
-}
 
 .age-img{
     width: 150px;
@@ -214,26 +231,41 @@
     display: none;
 }
 
-@media screen and (max-width:730px) {
-   .age-container{
-    display: none;
-   }
-   .age-mobile{
-    display: block;
-   }
-}
-
-@media screen and (max-width:465px) {
+@media screen and (max-width:555px) {
      .age-img{
         width: 100px;
      }
+
      .age{
         font-size: small;
-        margin-top: -20px;
+        margin-top: -25px;
      }
- }
+}
 
- /* NEW ARRIVALS */
+@media screen and (max-width:400px) {
+    .age-img{
+       width: 70px;
+    }
+
+    .age{
+        font-size: x-small;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width:315px) {
+    .age-img{
+       width: 40px;
+    }
+
+    .age{
+        font-size: 6px;
+        margin-top: -10px;
+    }
+}
+
+
+ /* CARDS */
 
  .card-container{
     display: flex;
@@ -245,16 +277,17 @@
 
  .card{
     width: 320px;
-    height: 440px;
-    text-align: center;
-    position: relative;
-    margin-top: -40px;
+    height: 420px;
 
+    text-align: center;
+    /* position: relative; */
+    margin-top:-40px;
  }
 
  .product{
-    width: 310px;
-    /* height: 350px; */
+    width: 300px;
+    height: 250px;
+    
     margin: auto;
     margin-top: 17px;
     transition: transform 0.5s ease;
@@ -267,32 +300,36 @@
  .product img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
  }
 
  .info{
-
     margin:auto;
     margin-top: 10px;
-    
+
  }
 
+ /* BUTTON */
+
  .button button{
-    padding: 8px;
-    border: 1px solid darkmagenta;
+    padding: 5px;
     border-radius: 15px;
     font-size: large;
     background-color: white;
-    position: absolute;
-    bottom: 107px;
-    left: 90px;
+    /* position: absolute; */
+    /* bottom: 107px; */
+    /* left: 80px; */
+    width: 150px;
  }
 
  .button{
     display: none;
+    text-align: center;
+    
  }
 
  .button button:hover{
-    background-color: darkmagenta;
+    background-color: darkviolet;
     color: white;
  }
 
@@ -303,19 +340,18 @@
  @media screen and (max-width:685px) {
     .card{
         width: 220px;
-        height: 330px;
-        margin-top: -25px;
+        height: 320px;
     }
 
     .product{
-      width: 210px;
+      width: 200px;
+      height: 150px;
     }
 
     .button button{
-        left: 60px;
-        bottom: 95px;
         padding:4px ;
         font-size: small;
+        width: 130px;
     }
 }
 
@@ -323,7 +359,11 @@
     .card{
         width: 150px;
         height: 252px;
-        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
+    .card-container{
+        margin-top: 10px;
     }
 
     .product{
@@ -331,10 +371,9 @@
     }
 
     .button button{
-        left: 35px;
-        bottom:75px;
         padding:4px ;
         font-size: small;
+        width: 110px;
     }
 
     .info h4{
@@ -354,7 +393,7 @@
     .card{
         width: 110px;
         height: 200px;
-        margin-top: -35px;
+        margin-bottom: 55px;
     }
 
     .product{
@@ -362,9 +401,10 @@
     }
 
     .button button{
-        left: 14px;
-        bottom:60px;
-        padding:4px ;
+        
+        width: 90px;
+
+        padding:2px ;
         font-size: small;
     }
 
@@ -381,5 +421,93 @@
     }
 }
 
+@media screen and (max-width:262px) {
+    .card{
+        width: 80px;
+        height: 180px;
+        margin-bottom: 82px;
+    }
+
+    .product{
+      width: 70px;
+    }
+
+    .button button{
+        width: 80px;
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    .info h4{
+        font-size: 8px;
+    }
+
+    .info h2{
+        font-size: 16px;
+    }
+
+    .info{
+        margin-top: 20px;
+    }
+}
+
+/* BRANDS */
+
+.brand-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-img{
+    width: 180px;
+    margin: auto;
+}
+
+.brand-img img{
+    width: 100%;
+}
+
+@media screen and (max-width:545px) {
+    .brand-img{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:305px) {
+    .brand-img{
+        width: 65px;
+    }
+}
+
+/* AD BANNER */
+.ad{
+    display: flex;
+    justify-content: center;
+}
+
+/* VIEW MORE BUTTON */
+
+.viewmore-button a{
+    padding: 8px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+    font-size: large;
+    background-color: darkviolet;
+    color: white;
+}
+
+.viewmore-button{
+    text-align: center;
+}
 
 
+.viewmore-button a:hover{
+    background-color: white;
+    border: 1px solid darkviolet;
+    color: darkviolet;
+}
+
+.viewmore-button button:hover a{
+    color: darkviolet;
+}
