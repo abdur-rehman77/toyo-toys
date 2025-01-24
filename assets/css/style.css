@@ -177,6 +177,21 @@
     }
 }
 
+@media screen and (max-width:348px) {
+    .right-line{
+        width: 7%;
+    }
+
+    .left-line{
+        width: 7%;
+    }
+
+    .all-heading{
+        gap: 22px;
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width:290px) {
     .right-line{
         width: 7%;
@@ -189,6 +204,21 @@
     .all-heading{
         gap: 20px;
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width:245px) {
+    .right-line{
+        width: 5%;
+    }
+
+    .left-line{
+        width: 5%;
+    }
+
+    .all-heading{
+        gap: 12px;
+        font-size: 7px;
     }
 }
 
