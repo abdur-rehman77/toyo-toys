@@ -577,7 +577,7 @@
     width: 100px;
     height: 100px;
     transition: transform 0.5s ease;
-    box-shadow: 0px 0px 10px 2px black
+    /* box-shadow: 0px 0px 10px 2px black */
 }
 
 .small-box img{
@@ -589,7 +589,7 @@
 .large-box{
     width: 340px;
     height: 340px;
-    box-shadow: 0px 0px 10px 2px black
+    /* box-shadow: 0px 0px 10px 2px black */
 }
 
 .large-box img{
@@ -900,5 +900,10 @@ footer .social{
 
 }
 
+@media screen and (max-width:330px){
+    footer .footer{
+        padding: 0 0px;
+    }
+}
 
 
