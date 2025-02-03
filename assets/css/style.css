@@ -6,8 +6,6 @@
     text-decoration: none;
     list-style-type: none;
     font-family: "Poppins", serif;
-    font-weight: 600;
-    font-style: normal;
 }
 
 .header{
@@ -28,6 +26,7 @@
 
 .header a{
     color: white;
+    font-weight: 600;
 }
 
 .header nav .logo{
@@ -117,7 +116,7 @@
     gap: 70px;
     font-size: large;
     color: rgba(0, 0, 0, 0.781);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .left-line{
@@ -336,7 +335,6 @@
  .info{
     margin:auto;
     margin-top: 10px;
-
  }
 
  /* BUTTON */
@@ -389,7 +387,7 @@
     .card{
         width: 150px;
         height: 252px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .card-container{
@@ -423,7 +421,7 @@
     .card{
         width: 110px;
         height: 200px;
-        margin-bottom: 55px;
+        margin-bottom: 65px;
     }
 
     .product{
@@ -455,7 +453,7 @@
     .card{
         width: 80px;
         height: 180px;
-        margin-bottom: 82px;
+        margin-bottom: 90px;
     }
 
     .product{
@@ -815,6 +813,149 @@
             width: 40px;
             padding: 5px;
         }
+    }
+}
+
+
+/* CONTACT */
+.contact-info{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.contact-info ol{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.contact{
+    margin-top: 30px;
+}
+
+.contacts-form{
+    width: 80%;
+    padding: 15px;
+    box-shadow: 0px 0px 3px 1px #555;
+    margin: auto;
+}
+
+.contacts-form form{
+    display: flex;
+    flex-direction: column;
+}
+.contacts-form label{
+    font-size: larger;
+    color: #555;
+ }
+
+ .contacts-form input{
+    border: none;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    border: 1px solid #333;
+    width: 90%;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+ }
+
+ .contacts-form input:focus{
+    border-color: darkviolet;
+ }
+
+ .contacts-form textarea{
+    margin-bottom: 8px;
+    margin-top: 5px;
+    width: 90%;
+    height: 200px;
+    font-size: 18px;
+    outline: none;
+   border: 1px solid #333;
+   padding: 8px;
+ }
+
+ .contacts-form textarea:focus{
+    border-color: darkviolet;
+ }
+
+.contact-btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+ input[type="submit"]{
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    background-color: #eee;
+    color: darkviolet;
+    font-weight: bold;
+    box-shadow:0px 0px 3px 1px rgba(0, 0, 0, 0.8);
+ }
+
+ input[type="submit"]:hover{
+    background-color: darkviolet;
+    color: white;
+ }
+
+ .contact-location{
+    margin-top: 30px;
+    margin-bottom: 50px;
+ }
+ .contact-map{
+    width: 100%;
+    height: 250px;
+ }
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+@media screen and (max-width:900px) {
+    .contact-info ol li{
+     font-size: small;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contact-info ol{
+    flex-direction: column;
+    gap: 30px;
+    }
+
+    .contact-info ol li{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .contact-info p{
+     font-size: small;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .contact-info p{
+     font-size: small;
+    }
+    .contact-info ol li{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:640px) {
+    input[type="submit"]{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:411px) {
+    input[type="submit"]{
+        width: 77%;
     }
 }
 
