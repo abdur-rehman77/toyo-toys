@@ -13,7 +13,8 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500;1,600;1,700&display=swap');
     </style>
-
+   <!-- SWIPPER -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
 <body>
 
@@ -122,14 +123,12 @@
       </div>
       </div>
      </div>
-<br>
    <!-- HEADING -->
    <div class="all-heading">
     <div class="left-line"></div>
     <div class="heading"><h1>New Arrivals</h1></div>
     <div class="right-line"></div>
   </div>
-<br>
   <!-- NEW ARRIVALS -->
 
 
@@ -286,6 +285,29 @@
         <a href=""> <img src="assets/images/brand/hasbro.png" alt=""></a>
        </div>
      </div>
+
+        <!-- HEADING -->
+   <div class="all-heading">
+    <div class="left-line"></div>
+    <div class="heading"><h1>Client Reviews</h1></div>
+    <div class="right-line"></div>
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <div class="client-card">
+        <div class="client-pic">
+       <img src="assets/images/client/1.png" alt="">
+        </div>
+        <div class="client-review">
+
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="swiper-pagination" id="slider-btn"></div>
+  </div>
 
      <!-- AD BANNER -->
       <div class="ad">
@@ -531,6 +553,39 @@
         </div>
       </footer>
     
+<script src="assets/js/swiper-bundle.min.js"></script>
+      <!-- JAVASCRIPT -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+        320: {  // For small screens (mobile)
+            slidesPerView: 1,
+        },
+        480: {  // Slightly larger screens
+            slidesPerView: 1,
+        },
+        768: {  // Tablets
+            slidesPerView: 2,
+        },
+        1024: { // Laptops
+            slidesPerView: 3,
+        },
+        1200: { // Large screens
+            slidesPerView: 4,
+        }
+    }
+        });
+    </script>
 
 <!-- JQUERY LINK -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
