@@ -8,6 +8,9 @@
     font-family: "Poppins", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .header{
     width: 100%;
     height: 80px;
@@ -106,7 +109,59 @@
 
 .mobile-nav a{
     color: white;
+    font-weight: 600;
 }
+
+.brand{
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.brand-list{
+    position: absolute;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 130px;
+   transform: translateX(-30%);
+   /* margin-top: 25px; */
+   background-color: darkviolet;
+   text-align: center;
+   padding: 10px;
+   display: none;
+}
+
+.brand:hover .brand-list{
+    display: flex;
+}
+
+/* SEARCH BAR */
+
+.search-bar{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+
+.search-bar input{
+    background-color: darkviolet;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.search-bar input::placeholder{
+    color: white;
+    font-size: x-large;
+}
+
 
 /* HEADING */
 .all-heading{
@@ -230,12 +285,9 @@
     gap: 50px;
 }
 
-.age-container a{
-    color: darkviolet;
-}
 
 .age-container a{
-    color: darkviolet;
+    color: black;
 }
 
 
@@ -310,7 +362,7 @@
 
     text-align: center;
     /* position: relative; */
-    margin-top:-40px;
+    margin-top:-20px;
  }
 
  .product{
@@ -477,6 +529,75 @@
     .info{
         margin-top: 20px;
     }
+}
+
+/* PAGINATION */
+
+/*--------------------Pagination--------------------*/
+.page-btn{
+    margin-bottom: 5%;
+   text-align: center;
+   display: flex;
+   margin-top: 7%;
+   gap: 12px;
+   justify-content: center;
+
+}
+
+.page-btn a{
+    border: 1px solid darkviolet;
+    padding: 4px;
+    cursor: pointer;
+    width: 36px;
+    color: darkviolet;
+}
+
+.page-btn a:hover{
+    background-color: darkviolet;
+    color: #fff;
+}
+
+.page-btn ul{
+    display: flex;
+    list-style: none;
+}
+
+#pre{
+    width: 85px;
+    border: 1px solid darkviolet;
+    padding: 4px;
+    color: darkviolet;
+    
+}
+
+#pre:hover{
+    background-color: darkviolet;
+    color: white;
+}
+
+#Next{
+    width: 80px;
+}
+
+#disable{
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #555;
+    cursor: not-allowed;
+    padding: 5px;
+    width: 85px;
+}
+.disable:hover{
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #555;
+    cursor: not-allowed;
+    padding: 4px;
+}
+
+.active{
+    background-color: darkviolet;
+    color: white !important;
 }
 
 /* BRANDS */
@@ -985,11 +1106,11 @@
 /* CLIENT REVIEwS */
 
 .client-card{
-    background-color: aqua;
+    background-color: darkviolet;
     border-radius: 12px;
-    width: 250px;
-    height: 350px;
+    width: 85%;
     margin-bottom: 30px;
+    padding: 10px;
 }
 
 .client-pic{
@@ -1008,11 +1129,103 @@
 }
 
 .client-review{
-    background-color: yellow;
-    height: 200px;
-    width: 200px;
+    width: 100%;
     margin: auto; 
-    margin-top: 10px;   
+    margin-top: 20px;
+    color: white;
+}
+.client-review i{
+    color: goldenrod;
+}
+
+.client-review p{
+    font-size: 16px;
+}
+
+
+/* ABOUT */
+.about-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about h3, h4{
+    margin-bottom: 20px;
+}
+
+.about{
+    width: 500px;
+}
+.about-pic{
+    width: 500px;
+    height: 900px;
+}
+
+.about-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:1040px) {
+    .about-pic{
+        width: 380px;
+        height: 640px;
+    }
+
+    .about-container{
+        gap: 3px;
+    }
+
+    .about{
+        font-size: 12px;
+        width: 380px;
+    }
+}
+
+
+@media screen and (max-width:765px) {
+    .about-pic{
+        width: 330px;
+        height: 585px;
+    }
+
+    .about-container{
+        gap: 15px;
+    }
+
+    .about{
+        font-size: 10px;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .about-pic{
+        width: 270px;
+        height: 440px;
+    }
+
+    .about-container{
+        gap:5px;
+    }
+
+    .about{
+        font-size:8px;
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:530px){
+      .about-container{
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-pic{
+        width: 400px;
+      }
 }
 /* FOOTER */
 
@@ -1021,6 +1234,7 @@ footer{
     background-color: darkviolet;
     border-radius: 32px 32px 0 0;
     padding: 32px;
+    margin-top: 20px;
 }
 footer .footer{
     max-width: 1100px;
